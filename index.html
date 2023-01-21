@@ -5,10 +5,42 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Coding Quiz</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <link rel='stylesheet' href='assets/css/style.css'>
+    <script defer src='script.js'></script>
 </head>
 <body>
+    
+    <div class = 'container'>
+
+        <div class='begin'>
+            <h2>Press Start To Begin Test</h2>
+                <div class ='controls'>
+                <button id = 'start-btn' class='start-btn btn'>Start</button>
+        </div>
+
+        
+        
+        <div id='timer'>Time left: </div>
+        <div id = 'Question-container' class = 'hide'></div>
+         <div id ='question'>Question</div>
+           <div id='answer-button' class= 'button-grid'>
+              <button class="btn">Answer A</button>
+              <button class="btn">Answer B</button>
+              <button class="btn">Answer C</button>
+              <button class="btn">Answer D</button>
+        
+        </div>
+    </div>  
+    
+    
+    <div class='Game-over'>
+        <div id='Score'></div>
+        <input type='text' size='20' placeholder='Enter intials'   name='initials' id='initals'/>
+        <button id='submitscore'>Submit</button>
+    </div>
+
+
+
     
 </body>
 </html>

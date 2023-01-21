@@ -6,7 +6,8 @@
     <title>Coding Quiz</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='assets/css/style.css'>
-    <script defer src='script.js'></script>
+
+
 </head>
 <body>
     
@@ -16,31 +17,29 @@
             <h2>Press Start To Begin Test</h2>
                 <div class ='controls'>
                 <button id = 'start-btn' class='start-btn btn'>Start</button>
-        </div>
+           </div>
 
         
-        
-        <div id='timer'>Time left: </div>
-        <div id = 'Question-container' class = 'hide'></div>
-         <div id ='question'>Question</div>
-           <div id='answer-button' class= 'button-grid'>
-              <button class="btn">Answer A</button>
-              <button class="btn">Answer B</button>
-              <button class="btn">Answer C</button>
-              <button class="btn">Answer D</button>
-        
-        </div>
-    </div>  
+          <div class='Test'>
+            <div id='timer'>Time left: </div>
+            <div id = 'Question-container' class = 'hide'></div>
+            <div id ='question'>Question</div>
+            <div id='answer-button' class= 'button-grid'>
+              <button class="a" onclick="Answer('a')">A</button>
+              <button class="b" onclick="Answer('b')">B</button>
+              <button class="c" onclick="Answer('C')">C</button>
+              <button class="d" onclick="Answer('D')">D</button>
+               <div class='result'></div>
+             </div>
     
     
-    <div class='Game-over'>
-        <div id='Score'></div>
-        <input type='text' size='20' placeholder='Enter intials'   name='initials' id='initals'/>
-        <button id='submitscore'>Submit</button>
+          <div class='Game-overcontainer'>
+          <div id='endingScore'></div>
+            <input type='text' size='20' placeholder='Enter intials'   name='initials' id='initals'/>
+           <button id='submitscore'>Submit</button>
     </div>
 
 
-
-    
-</body>
+    <script defer src='script.js'></script> 
+  </body>
 </html>

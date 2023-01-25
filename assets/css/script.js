@@ -91,7 +91,7 @@ function showGameOverContainer() {
 
     quizWrapper.style.display = 'none';
     gameOverContainer.style.display = 'block';
-}
+};
 
 function checkAnswer(response) {
 
@@ -114,7 +114,8 @@ function checkAnswer(response) {
         result.textContent = "";
     }, 1000);
 
-}
+};
+
 function startGame() {
     isWin = false; 
     count = 60;
@@ -133,18 +134,15 @@ function startTimer() {
         }
     }, 1000);
     console.log('hello again')
-}
-
-
-
-
- function tapTimer() {
+};
+ 
+function tapTimer() {
     if (count < 6) {
         count = 0
     }
     else {
         count = count -5
     }
- }
+ };
 
 

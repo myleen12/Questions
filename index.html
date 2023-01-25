@@ -20,21 +20,22 @@
            </div>
 
         
-          <div class='Test'>
+          <div class='quizWrapper'>
             <div id='timer'>Time left: <span id='countText'></span></div>
             <div id = 'Question-container' class = 'hide'></div>
             <div id ='question'>Question</div>
             <div id='answer-button' class= 'button-grid'>
-              <button id='a'>A</button>
-              <button id='b'>B</button>
-              <button id='c'>C</button>
-              <button id='d'>D</button>
-               <div class='result'></div>
-             </div>
+              <button id='a' onclick="checkAnswer('a')">A</button>
+              <button id='b' onclick="checkAnswer('b')">B</button>
+              <button id='c' onclick="checkAnswer('c')">C</button>
+              <button id='d' onclick="checkAnswer('d')">D</button>
+              <div class='result'></div>
+            </div>
+          </div>
     
     
-          <div class='Game-overcontainer'>
-          <div id='endingScore'></div>
+          <div class='gameOverContainer'>
+          <div>Your score: <span id='endingScore'></span></div>
             <input type='text' size='20' placeholder='Enter intials'   name='initials' id='initals'/>
            <button id='submitscore'>Submit</button>
     </div>
